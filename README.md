@@ -135,3 +135,38 @@ html로 직접 작성하는 경우 필요한 규칙입니다. reactJS등의 프�
 
 # CSS
 
+## Syntax
+
+* softtab을 지원하는 IDE를 사용한다면 해당 옵션을 활성화하고, 들여쓰기 공백은 `2space`로 지정합니다.
+* 여러개의 selector를 함께 사용하는 경우 한 줄씩 분리하여 작성하도록 합니다.
+* 중괄호를 시작하기전 `1space`의 공백을 추가하여, 가독성을 높입니다.
+* 종료용 중괄호를 작성할때는 줄바꿈 합니다.
+* 속성을 작성시 `:`뒤에 `1space`의 공백을 추가합니다.
+* 속성 선언시 `;`를 붙여 선언이 종료됨을 표시합니다.
+* `,`로 분리된 속성값을 작성하는 경우 `,`뒤로 `1space`의 공백을 추가합니다.
+  * 컬러값을 식별하는데 유용하도록 `rgb()`, `rgba()`, `hsl()`, `hsla()`, `rect()` 등의 속성의 값의 `,`뒤에는 공백을 추가하지 않습니다.
+* 1 이하의 수를 표시할때 `0`은 생략하여 작성합니다.(0.5 대신 `.5`, -0.5px 대신 `-.5px`)
+* hex 컬러값 작성시 `#fff`와 같이 모두 소문자로 표기합니다.
+* 가능하다면 shorthand를 활용합니다.(`#ffffff`대신 `#fff`)
+* 선택자 내부의 속성의 값을 표기하는 경우 큰따옴표(`""`)를 사용합니다.
+
+```css
+/* 잘못된 케이스 */
+.selector,.selector-secondary,
+.selector[type=text]{
+  padding:15px;
+  margin:0px 0px 15px;
+  background-color:rgba(0, 0, 0, 0);
+  box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFF
+}
+
+/* 아래의 형태로 사용합니다. */
+.selector,
+.selector-secondary,
+.selector[type="text"] {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+```
