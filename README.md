@@ -1,7 +1,9 @@
 # coding-standard
 HTML, CSS 작성 가이드.
 
-> [codeguide.co](git@github.com:dalgos/coding-standard.git)의 내용을 바탕으로, 필요한 내용만을 참고하여 작성되었습니다.
+> codeguide.co의 내용을 바탕으로, 필요한 내용만을 참고하여 작성되었습니다.
+
+[codeguide.co](http://codeguide.co/#html-syntax)
 
 html로 직접 작성하는 경우 필요한 규칙입니다. reactJS등의 프레임워크를 통해 생성되는 코드에는 적용되지 않습니다.
 
